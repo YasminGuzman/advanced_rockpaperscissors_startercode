@@ -19,7 +19,7 @@
 //****************** SERIOUSLY TEST USING console.log()!!! ******************
 
 //GLOBAL VARIABLES
-
+/* global $*/
 
 
 //FUNCTIONS
@@ -28,4 +28,42 @@
 // DOCUMENT READY FUNCTION
 $(document).ready(function(){
         
-})
+$("#Go").click(function(){
+   var userChoice= $("#input").val();
+    $("#value").text(userChoice);
+        });
+      
+ $("#Go").click(function(){    
+ var ComputerChoice= ["Rock","Paper","Scissors"];
+ var randomNumber = Math.floor(Math.random()*3);       
+    $("#Computerval").text(ComputerChoice[randomNumber]);
+    });
+  
+if(UserChoice= "rock" && ComputerChoice= "rock") {
+         alert("Tie");
+         }
+    else if(UserChoice= "rock" && ComputerChoice= "paper"){
+        alert("You Win");
+        }
+    else if(UserChoice= "rock" && ComputerChoice= "Scissors"){
+        alert("You Win");
+        }
+    else if(UserChoice= "paper" && ComputerChoice= "rock"){
+        alert("You Lose");
+        }
+    else if(UserChoice= "paper" && ComputerChoice= "paper"){
+        alert("Tie");
+        }
+    else if(UserChoice= "paper" && ComputerChoice= "scissors"){
+        alert("You Lose");
+        }
+    else if(UserChoice= "Scissors" && ComputerChoice= "rock"){
+        alert("You Lose");
+        }
+    else if(UserChoice= "scissors" && ComputerChoice= "paper"){
+        alert("You Win");
+        }
+    else if(UserChoice= "scissors" && ComputerChoice= "scissors"){
+        alert("Tie");
+        }
+});
